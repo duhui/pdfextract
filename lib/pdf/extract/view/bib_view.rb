@@ -7,7 +7,7 @@ module PdfExtract
   class BibView < AbstractView
 
     def render options={}
-
+      return
       bibs = []
       
       objects.each_pair do |type, objs|
@@ -38,6 +38,7 @@ module PdfExtract
     end
 
     def self.write render, filename
+      return
       File.open filename, "w" do |file|
         file.write render
       end

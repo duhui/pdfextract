@@ -6,7 +6,7 @@ require_relative '../lib/pdf-extract.rb'
 require_relative '../lib/pdf/extract/references/resolve.rb'
 
 program :name, 'pdf-extract'
-program :version, '0.0.1'
+program :version, '0.1.1'
 program :description, 'PDF content extraction toolkit'
 
 semantic = ['resolved_references', 'references', 'titles', 'sections']
